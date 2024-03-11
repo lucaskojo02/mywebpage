@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>gallery</title>
+        <style type="text/css">
+            *{box-sizing: border-box;}
+            html,body {margin: 0 auto;padding: 0;}
+            .image-container{margin: 0;width: 50%;box-shadow: 0 rgba(0,0,0,0.30),  rgba(0,0,0,0.22);margin-bottom: 20px;transition-duration: 1s; display: inline-block;vertical-align: middle;}
+            .image-container:hover{width: 80%;box-shadow: 0  rgba(0,0,0,0.30), o  rgba(0,0,0,0.22);}
+            img{width:25%; height: 50%;display: inline-block;}
+            .image-description{padding: 0 15px 15px 15px; text-align: left;font-weight: bold;font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;}
+            .lightbox{display: table;transition-duration: 1s;position: fixed;top: -100%;left: 0;width: 100%;height: 100%;background: rgba(0,0,0,0.7);}
+            .lightbox:target{top: 0;}
+            .lightbox-content{display: table-cell;vertical-align: middle;text-align: center;}
+            .close{position: absolute;top: 10px;right: 10px;font-size: 20px;font-weight: 300;text-decoration: none;color: white;}
+            .lightbox img{max-width: 100%;height: auto;}
+        </style>
+    </head>
+    <body>
+        <h1 style="text-align: center;">LUCAS KOJO GALLERY</h1>
+        <div class="gallery">
+            <div class="image-container" id="container1">
+                <a href="#image1"><img src="C:\Users\ADMIN\OneDrive\Desktop\others\OneDrive\Pictures\1689501548063.jpg"/></a>
+                <p class="image-description">@ SPORTSVIEW HOTEL</p>
+            </div>
+            <div class="image-container" id="container2">
+              <a href="#image2"><img src="C:\Users\ADMIN\OneDrive\Desktop\others\OneDrive\Pictures\1696948760312 - Copy.jpg"/></a>
+              <p class="image-description"> @ GARDEN CITY</p>
+            </div>
+            <div class="image-container" id="container3">
+                <a href="#image3"><img src="C:\Users\ADMIN\OneDrive\Desktop\others\OneDrive\Pictures\1689501575708.jpg"/></a>
+                <p class="image-description">@ DRIVE INN</p>
+            </div>
+            <div class="image-container" id="container4">
+              <a href="#image4"><img src="C:\Users\ADMIN\OneDrive\Desktop\others\OneDrive\Pictures\WhatsApp Image 2023-10-04 at 11.13.59_45b47662 - Copy.jpg"/></a>
+              <p class="image-description"> @ JKUAT KAREN CAMPUS</p>
+            </div>
+
+        </div>
+        <div class="lightbox"id="image1">
+            <a href="#" class="close">CLOSE</a>
+            <div class="lightbox-content">
+             <img src="C:\Users\ADMIN\OneDrive\Desktop\others\OneDrive\Pictures\1689501548063.jpg">
+            </div>
+        </div>
+        <div class="lightbox"id="image2">
+            <a href="#" class="close">CLOSE</a>
+            <div class="lightbox-content">
+             <img src="C:\Users\ADMIN\OneDrive\Desktop\others\OneDrive\Pictures\1696948760312 - Copy.jpg">
+            </div>
+        </div>
+        <div class="lightbox"id="image3">
+            <a href="#" class="close">CLOSE</a>
+            <div class="lightbox-content">
+             <img src="C:\Users\ADMIN\OneDrive\Desktop\others\OneDrive\Pictures\1689501575708.jpg">
+            </div>
+        </div>
+        <div class="lightbox"id="image4">
+            <a href="#" class="close">CLOSE</a>
+            <div class="lightbox-content">
+             <img src="C:\Users\ADMIN\OneDrive\Desktop\others\OneDrive\Pictures\WhatsApp Image 2023-10-04 at 11.13.59_45b47662 - Copy.jpg">
+            </div>
+        </div>
+    </body>
+</html>
